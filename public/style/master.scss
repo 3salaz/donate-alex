@@ -1,16 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:wght@700&display=swap');
 // Base
-@import './reset';
-@import './variables';
-@import './base';
-
-@import './helpers';
-@import './mediaQueries';
+@import './init/reset';
+@import './init/variables';
+@import './init/base';
 
 // COMPONENTS
 @import './components/1-navbar';
 @import './components/2-header';
 @import './components/3-main';
-@import './components/4-footer';
+@import './components/4-section';
+@import './components/5-footer';
 
 
 
+// Tablet / Desktop
+
+@media only screen and (min-width: 500px) {
+    body{
+        background-color: rgb(186, 201, 186);
+    }
+    .content{
+        flex-direction: row;
+    }
+}

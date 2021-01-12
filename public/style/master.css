@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:wght@700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -69,7 +70,7 @@ html body {
 }
 
 body {
-  font-family: Arial;
+  font-family: 'Montserrat', sans-serif;
   font-size: 3em;
   line-height: 1.5;
   display: -webkit-box;
@@ -79,7 +80,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   color: #333333;
   margin: 0;
 }
@@ -88,6 +89,7 @@ img {
   margin: 0 auto;
   display: block;
   height: auto;
+  border-radius: .1em;
 }
 
 a {
@@ -95,73 +97,39 @@ a {
 }
 
 #content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  margin: .5em;
-}
-
-.footer {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
-
-@media screen and (width: 600px) {
-  body {
-    background-color: red;
-  }
-}
-
-@media screen and (width: 800px) {
-  body {
-    background-color: #1e63e2;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 nav {
-  background-color: #2e2e2e;
+  background-color: #B0113A;
 }
 
 /* Header */
-.prof-pic {
-  border-radius: 150px;
-  width: 90px;
-}
-
 .user-name {
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .user-name a {
-  color: #d502ff;
-  font-size: 1rem;
+  color: #353535;
+  font-size: 2rem;
   font-weight: 600;
-  font-family: 'Karla', Helvetica, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .user-name a:hover {
   color: #000;
 }
 
-.twitter-bg {
-  background-color: #1DA1F2;
-}
-
-.instagram-bg {
-  background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
-}
-
-.instagram-bg:hover {
-  background: none;
-  background-color: white;
-  color: white;
+main .tagline {
+  text-align: center;
+  font-size: .4em;
+  margin-top: 1em;
 }
 
 .link {
@@ -183,11 +151,60 @@ nav {
   background-color: #fff;
 }
 
+section {
+  text-align: center;
+  color: white;
+  background-color: #B0113A;
+}
+
+section p {
+  font-size: .4em;
+  padding: .5em 0 .5em 0;
+  font-weight: 400;
+}
+
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-bottom: .1em;
+  margin-top: .1em;
+}
+
+footer .container {
+  width: 100%;
+}
+
+footer .qr-code {
+  border-radius: .1em;
+  width: 50%;
+}
+
+footer input {
+  width: 100%;
+  padding: 0 1em;
+}
+
+footer form {
+  padding: 0 1em;
   background-color: white;
 }
 
-footer img {
-  width: 150px;
+@media only screen and (min-width: 500px) {
+  body {
+    background-color: #bac9ba;
+  }
+  .content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 /*# sourceMappingURL=master.css.map */

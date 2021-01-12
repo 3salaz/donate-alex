@@ -4,39 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BBGRL415</title>
+    <title>Donation | Alex</title>
+    <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">  
+    <link rel="apple-touch-icon" href="./favicon_io/apple-touch-icon.png">
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./style/master.css">
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 </head>
 
 <body>
+
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Donations</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+    </nav>
+    
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="donate.html">Donate</a></li>
+    </ul>
+    <p class="user-name">
+        <a href="#">Alejandro Cruz</a>
+    </p>
     <div id="content">
         <header class="container">
-            <img class="prof-pic" src="./IMG_4887.png" alt="" />
-            <p class="user-name">
-                <a href="#">--Name--</a>
-            </p>
+            <img src="./profile.png" alt="" />
         </header>
         <main class="container">
-            <ul>
-                <li><a href="https://twitter.com/ThatGirlMaliyah" class="link twitter-bg">Twitter</a></li>
-                <li><a href="http://instagram.com/" class="link">Blog | Comming Soon</a></li>
-                <li><a href="https://www.instagram.com/babygirrrl415/" class="link instagram-bg">Instagram</a></li>
-            </ul>
-
-            <form action="https://www.paypal.com/donate" method="post" target="_top">
-                <input type="hidden" name="business" value="ZB8WQLN2WQ9QQ" />
-                <input type="hidden" name="item_name" value="Testing" />
-                <input type="hidden" name="currency_code" value="USD" />
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                </form>
+            <div class="tagline container">
+                <p>Hi everyone,</p>
+                <p>I am fundraising for my brothers funeral to help my mom with the funeral expenses. As you guys know it's really hard for our family and we are having a hard time believing he is gone, if you guys can help I appreciate it from the bottom of my heart.</p>
+            </div>
+            <hr>
+            <hr>
         </main>
     </div>
+    <section>
+        <p class="container">Please use the link below to support in any way you can.<span class="yellow-text"> Thank You!</span></p>
+    </section>
+
     
-    <footer class="footer">
-        <img src="./QR Code.png" alt="Bbgrl Logo" />
+
+    
+
+    <footer>
+        <div class="container">
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <img class="qr-code" src="./qrCode.png" alt="Bbgrl Logo" />
+                <input type="hidden" name="business" value="25FY8KK67G42Q" />
+                <input type="hidden" name="item_name" value="Funeral Expenses" />
+                <input type="hidden" name="currency_code" value="USD" />
+                <input type="image" src="https://www.familiesanonymous.org/wp-content/uploads/2019/07/paypal-donate-button-high-quality-png.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+        </div>
+        
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
