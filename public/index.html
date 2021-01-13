@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation | Alex</title>
@@ -11,58 +10,70 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./style/master.css">
-</head>
 
-<body>
-
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.2.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.2.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.2.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.2.2/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.2.2/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.2.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.2.2/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.2.2/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.2.2/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.2.2/firebase-performance.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+  <body>
     <nav>
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Donations</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="donate.html">Donate</a></li>
-          </ul>
-        </div>
-    </nav>
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="donate.html">Donate</a></li>
-    </ul>
-    <div class="wrapper">
-        <p class="user-name">
-            <a href="#">Alejandro Cruz</a>
-        </p>
-        <div id="content" class="container">
-            <img class="z-depth-4" src="./profile.png" alt=""/>
-            <div class="tagline">
-                <p>Hi everyone,</p>
-                <p>I am fundraising for my brothers funeral to help my mom with the funeral expenses. As you guys know it's really hard for our family and we are having a hard time believing he is gone, if you guys can help I appreciate it from the bottom of my heart.</p>
-                <div class="container">
-                    <form action="https://www.paypal.com/donate" method="post" target="_top">
-                        <input type="hidden" name="business" value="25FY8KK67G42Q" />
-                        <input type="hidden" name="item_name" value="Funeral Expenses" />
-                        <input type="hidden" name="currency_code" value="USD" />
-                        <input type="image" src="https://www.familiesanonymous.org/wp-content/uploads/2019/07/paypal-donate-button-high-quality-png.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                    </form>
-                </div>
-                <!-- <button class="btn">Photo Album 🎞</button>
-                <button class="btn">Paypal</button>
-                <button class="btn">Paypal</button> -->
-            </div>
-        </div>
-    </div>
-    
-    <section>
-        <p class="container">Please use the link above to support in any way you can.<span class="yellow-text"> Thank You!</span></p>
-    </section>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Donations</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+      </div>
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="donate.html">Donate</a></li>
+  </ul>
+  <div class="wrapper">
+      <p class="user-name">
+          <a href="#">Alejandro Cruz</a>
+      </p>
+      <div id="content" class="container">
+          <img class="z-depth-4" src="./profile.png" alt=""/>
+          <div class="tagline">
+              <p>Hi everyone,</p>
+              <p>I am fundraising for my brothers funeral to help my mom with the funeral expenses. As you guys know it's really hard for our family and we are having a hard time believing he is gone, if you guys can help I appreciate it from the bottom of my heart.</p>
+              <div class="container">
+                  <form action="https://www.paypal.com/donate" method="post" target="_top">
+                      <input type="hidden" name="business" value="25FY8KK67G42Q" />
+                      <input type="hidden" name="item_name" value="Funeral Expenses" />
+                      <input type="hidden" name="currency_code" value="USD" />
+                      <input type="image" src="https://www.familiesanonymous.org/wp-content/uploads/2019/07/paypal-donate-button-high-quality-png.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                      <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                  </form>
+              </div>
+              <!-- <button class="btn">Photo Album 🎞</button>
+              <button class="btn">Paypal</button>
+              <button class="btn">Paypal</button> -->
+          </div>
+      </div>
+  </div>
+  
+  <section>
+      <p class="container">Please use the link above to support in any way you can.<span class="yellow-text"> Thank You!</span></p>
+  </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./scripts/main.js"></script>
-</body>
-
+  </body>
 </html>
