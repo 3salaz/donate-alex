@@ -11,6 +11,12 @@
 @import './components/4-section';
 @import './components/5-footer';
 
+section{
+    margin-top: 1em;
+}
+.tagline .container{
+    margin-top: 1em;
+}
 form input{
     width: 100%;
 }
@@ -22,14 +28,14 @@ form input{
 @media only screen and (min-width: 800px) {
     #content{
         flex-direction: row;
-        max-height: 500px;
+        height: 10em;
     }
     #content header{
         height: 100%;
         max-height: 50vh;
     }
-    #content .container img{
-        height: 100%;
+    #content img{
+        // height: 10em;
     }
     .user-name a{
         font-size: 2em;
@@ -44,6 +50,9 @@ form input{
         justify-content: center;
         margin: 0 1em;
         background-color: white;
+    }
+    .tagline .container{
+        margin-top: 0;
     }
     .tagline div{
         margin-top: 1em;
@@ -63,12 +72,6 @@ form input{
     }
     footer{
         padding: .3em 1em;
-    }
-    section{
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        width: 100%;
     }
     .brand-logo{
         margin-left: 1em;
