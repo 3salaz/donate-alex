@@ -10,7 +10,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+menu, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -126,7 +126,7 @@ nav {
   color: #000;
 }
 
-main .tagline {
+.tagline {
   text-align: center;
   font-size: .4em;
   margin-top: 1em;
@@ -186,25 +186,89 @@ footer .qr-code {
   width: 50%;
 }
 
-footer input {
-  width: 100%;
-  padding: 0 1em;
-}
-
 footer form {
   padding: 0 1em;
   background-color: white;
 }
 
-@media only screen and (min-width: 500px) {
-  body {
-    background-color: #bac9ba;
-  }
-  .content {
+form input {
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  #content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    max-height: 500px;
+  }
+  #content header {
+    height: 100%;
+    max-height: 50vh;
+  }
+  #content .container img {
+    height: 100%;
+  }
+  .user-name a {
+    font-size: 2em;
+  }
+  header img {
+    max-height: 100%;
+  }
+  .tagline {
+    font-size: .5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 1em;
+    background-color: white;
+  }
+  .tagline div {
+    margin-top: 1em;
+  }
+  .tagline .btn {
+    margin: .5em 5em;
+    border-radius: 1em;
+  }
+  footer .container {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .container img {
+    max-width: 300px;
+  }
+  footer {
+    padding: .3em 1em;
+  }
+  section {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+  }
+  .brand-logo {
+    margin-left: 1em;
   }
 }
 /*# sourceMappingURL=master.css.map */
